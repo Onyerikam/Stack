@@ -95,7 +95,7 @@ class AdBlocker extends React.Component {
     this.setState({
       ...data
     });
-  
+  }
     exportData() {
       const data = this.state;
       const file = createFile(data);
@@ -199,10 +199,9 @@ class AdBlocker extends React.Component {
       </div>
     );
   }
-
   displayAdBlockerStatus() {
     const enabled = this.state.adBlockerEnabled;
     return <Indicator active={enabled} />;
   }
-}
+  
 }
